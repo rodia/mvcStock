@@ -19,7 +19,7 @@ return [
                     ],
                 ],
             ],
-            'segment' => [
+            'do' => [
                 'type'    => Segment::class,
                 'options' => [
                     'route'    => '/admin[/:action]',
