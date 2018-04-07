@@ -11,6 +11,10 @@ class IndexController extends AbstractActionController
     /**
      * We override the parent class' onDispatch() method to
      * set an alternative layout for all actions in this controller.
+     *
+     * @param \Zend\Mvc\MvcEvent $e
+     *
+     * @return mixed
      */
     public function onDispatch(MvcEvent $e)
     {
