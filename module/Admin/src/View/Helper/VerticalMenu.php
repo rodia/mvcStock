@@ -54,7 +54,6 @@ class VerticalMenu extends Menu
             }
 
             $result .= '</ul>';
-            $result .= '</a>';
             $result .= '</li>';
 
         } else {

@@ -240,6 +240,9 @@
                 <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
                 <li><a title="Add Widget" data-toggle="modal" href="#addWidgetModal"><span class="glyphicon glyphicon-plus-sign"></span> Add Widget</a></li>
             </ul>
+            <!-- Breadcrumbs -->
+            <?= $this->pageBreadcrumbs()->render(); ?>
+
             <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
             <hr>
             <?= $this->content ?>

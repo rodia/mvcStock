@@ -58,10 +58,12 @@ return [
         'factories' => [
             View\Helper\Menu::class => InvokableFactory::class,
             View\Helper\VerticalMenu::class => InvokableFactory::class,
+            View\Helper\Breadcrumbs::class => InvokableFactory::class,
         ],
         'aliases' => [
             'mainMenu' => View\Helper\Menu::class,
             'verticalMenu' => View\Helper\VerticalMenu::class,
+            'pageBreadcrumbs' => View\Helper\Breadcrumbs::class,
         ],
     ],
 ];
