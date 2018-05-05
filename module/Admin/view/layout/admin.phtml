@@ -68,50 +68,62 @@
             <hr>
 
             <?php
-            $this->mainMenu()->setItems(
+            $this->verticalMenu()->setItems(
                 [
                     [
                         'id' => 'setting',
                         'label' => 'Setting',
+                        'icon' => 'glyphicon-chevron-down',
+                        'target' => 'userMenu',
+                        'expanded' => 'in',
                         'dropdown' => [
                             [
                                 'id' => 'home',
                                 'label' => 'Home',
+                                'icon' => 'glyphicon-home',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'messages',
                                 'label' => 'Messages',
+                                'icon' => 'glyphicon-envelope',
+                                'extra' => '<span class="badge badge-info">4</span>',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'options',
                                 'label' => 'Options',
+                                'icon' => 'glyphicon-cog',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'shoutbox',
                                 'label' => 'Shoutbox',
+                                'icon' => 'glyphicon-comment',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'staff-list',
                                 'label' => 'Staff List',
+                                'icon' => 'glyphicon-user',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'transactions',
                                 'label' => 'Transactions',
+                                'icon' => 'glyphicon-flag',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'rules',
                                 'label' => 'Rules',
+                                'icon' => 'glyphicon-exclamation-sign',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'logout',
                                 'label' => 'Logout',
+                                'icon' => 'glyphicon-off',
                                 'link' => '#'
                             ],
                         ],
@@ -119,6 +131,8 @@
                     [
                         'id' => 'reports',
                         'label' => 'Reports',
+                        'icon' => 'glyphicon-chevron-right',
+                        'target' => 'menu2',
                         'dropdown' => [
                             [
                                 'id' => 'information-tats',
@@ -150,15 +164,19 @@
                     [
                         'id' => 'social-media',
                         'label' => 'Social Media',
+                        'icon' => 'glyphicon-chevron-right',
+                        'target' => 'menu3',
                         'dropdown' => [
                             [
                                 'id' => 'facebook',
                                 'label' => 'Facebook',
+                                'icon' => 'glyphicon-circle',
                                 'link' => '#'
                             ],
                             [
                                 'id' => 'twitter',
                                 'label' => 'Twitter',
+                                'icon' => 'glyphicon-circle',
                                 'link' => '#'
                             ],
                         ]
@@ -166,7 +184,7 @@
                 ]
             );
 
-            echo $this->mainMenu()->render();
+            echo $this->verticalMenu()->render();
             ?>
 
             <hr>
@@ -272,9 +290,9 @@
 </div>
 <!-- /.modal -->
 <!-- script references -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/bootstrap.js/bootstrap.min.js"></script>
+<script src="/js/scripts.js"></script>
 
 <?= $this->inlineScript() ?>
 </body>

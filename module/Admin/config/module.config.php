@@ -57,9 +57,11 @@ return [
     'view_helpers' => [
         'factories' => [
             View\Helper\Menu::class => InvokableFactory::class,
+            View\Helper\VerticalMenu::class => InvokableFactory::class,
         ],
         'aliases' => [
             'mainMenu' => View\Helper\Menu::class,
+            'verticalMenu' => View\Helper\VerticalMenu::class,
         ],
     ],
 ];
