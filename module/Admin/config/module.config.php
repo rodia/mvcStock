@@ -52,4 +52,14 @@ return [
             __DIR__ . '/../view',
         ],
     ],
+    // The following registers our custom view
+    // helper classes in view plugin manager.
+    'view_helpers' => [
+        'factories' => [
+            View\Helper\Menu::class => InvokableFactory::class,
+        ],
+        'aliases' => [
+            'mainMenu' => View\Helper\Menu::class,
+        ],
+    ],
 ];
