@@ -66,4 +66,119 @@ return [
             'pageBreadcrumbs' => View\Helper\Breadcrumbs::class,
         ],
     ],
+    'menuItems' =>[
+        'top' => [
+            [
+                'id' => 'setting',
+                'label' => 'Setting',
+                'icon' => 'glyphicon-chevron-down',
+                'target' => 'userMenu',
+                'expanded' => 'in',
+                'dropdown' => [
+                    [
+                        'id' => 'home',
+                        'label' => 'Home',
+                        'icon' => 'glyphicon-home',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'messages',
+                        'label' => 'Messages',
+                        'icon' => 'glyphicon-envelope',
+                        'extra' => '<span class="badge badge-info">4</span>', // meeds to be a service.
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'options',
+                        'label' => 'Options',
+                        'icon' => 'glyphicon-cog',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'shoutbox',
+                        'label' => 'Shoutbox',
+                        'icon' => 'glyphicon-comment',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'staff-list',
+                        'label' => 'Staff List',
+                        'icon' => 'glyphicon-user',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'transactions',
+                        'label' => 'Transactions',
+                        'icon' => 'glyphicon-flag',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'rules',
+                        'label' => 'Rules',
+                        'icon' => 'glyphicon-exclamation-sign',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'logout',
+                        'label' => 'Logout',
+                        'icon' => 'glyphicon-off',
+                        'link' => '#'
+                    ],
+                ],
+            ],
+            [
+                'id' => 'reports',
+                'label' => 'Reports',
+                'icon' => 'glyphicon-chevron-right',
+                'target' => 'menu2',
+                'dropdown' => [
+                    [
+                        'id' => 'information-tats',
+                        'label' => 'Information &amp; Stats',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'views',
+                        'label' => 'Views',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'requests',
+                        'label' => 'Requests',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'Timetable',
+                        'label' => 'timetable',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'alerts',
+                        'label' => 'Alerts',
+                        'link' => '#'
+                    ],
+                ],
+            ],
+            [
+                'id' => 'social-media',
+                'label' => 'Social Media',
+                'icon' => 'glyphicon-chevron-right',
+                'target' => 'menu3',
+                'dropdown' => [
+                    [
+                        'id' => 'facebook',
+                        'label' => 'Facebook',
+                        'icon' => 'glyphicon-circle',
+                        'link' => '#'
+                    ],
+                    [
+                        'id' => 'twitter',
+                        'label' => 'Twitter',
+                        'icon' => 'glyphicon-circle',
+                        'link' => '#'
+                    ],
+                ]
+            ],
+        ],
+    ],
 ];
